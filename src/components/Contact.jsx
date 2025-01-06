@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="text-center">
           <h2 className="text-3xl font-bold text-coffee-600">Visítanos</h2>
           <p className="mt-4 text-gray-600">
-            Nos encantaría servirte la taza perfecta.
+            Porque el café perfecto es un lujo que todos merecen.
           </p>
         </div>
 

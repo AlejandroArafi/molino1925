@@ -1,3 +1,5 @@
+import { desc } from "framer-motion/client";
+
 const MenuItem = ({ name, description, price, image }) => (
   <div className="bg-white rounded-lg shadow-md overflow-hidden">
     <img src={image} alt={name} className="w-full h-48 object-cover" />
@@ -14,25 +16,30 @@ const Menu = () => {
     {
       name: "Signature Latte",
       description:
-        "Rich espresso with velvety steamed milk and our secret blend",
+        // "Rich espresso with velvety steamed milk and our secret blend",
+        "Espresso intenso con leche al vapor aterciopelada y nuestra mezcla secreta.",
       price: "4.99",
       image: "/assets/images/menu/signature-latte.png",
     },
     {
       name: "Caramel Macchiato",
-      description: "Espresso with vanilla-flavored drink marked with caramel",
+      // description: "Espresso with vanilla-flavored drink marked with caramel",
+      description:
+        "Bebida de espresso con sabor a vainilla y un toque de caramelo",
       price: "5.49",
       image: "assets/images/menu/macchiato.jpg",
     },
     {
       name: "Cold Brew",
-      description: "Smooth, cold-steeped coffee with subtle sweetness",
+      // description: "Smooth, cold-steeped coffee with subtle sweetness",
+      description: "Café suave macerado en frío con un dulzor sutil",
       price: "4.49",
       image: "/assets/images/menu/Cold-Brew.jpg",
     },
     {
       name: "Mocha Supreme",
-      description: "Perfect blend of espresso, chocolate, and steamed milk",
+      // description: "Perfect blend of espresso, chocolate, and steamed milk",
+      description:'	4.	Mezcla perfecta de espresso, chocolate y leche al vapor.',
       price: "5.99",
       image: "assets/images/menu/Mocha.jpg",
     },

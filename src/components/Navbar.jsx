@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -9,7 +10,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-coffee-600">Molino 1925</h1>
+            <Link to="/" className="text-2xl font-bold text-coffee-600">Molino 1925</Link>
           </div>
 
           {/* Desktop Menu */}
@@ -30,9 +31,12 @@ const Navbar = () => {
               >
                 Contacto
               </a>
-              <button className="bg-coffee-600 text-white px-4 py-2 rounded-lg hover:bg-coffee-700">
+              <Link
+                to="/order"
+                className="bg-coffee-600 text-white px-4 py-2 rounded-lg hover:bg-coffee-700"
+              >
                 Ordena Ahora
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -69,9 +73,12 @@ const Navbar = () => {
               >
                 Contacto
               </a>
-              <button className="w-full bg-coffee-600 text-white px-4 py-2 rounded-lg hover:bg-coffee-700 mt-4">
+              <Link
+                to="/order"
+                className="w-full bg-coffee-600 text-white px-4 py-2 rounded-lg hover:bg-coffee-700 mt-4 block text-center"
+              >
                 Ordenar
-              </button>
+              </Link>
             </div>
           </div>
         )}
